@@ -6,10 +6,11 @@
   font-size: 2rem;
 }
 .btn {
-  background-color: rgb(11, 247, 31);
+  background-color: rgb(37, 214, 96);
   border-radius: 1rem;
   border-width: 0.2rem;
   font-size: 2rem;
+  color: ivory;
 }
 .text {
   font-size: 3rem;
