@@ -1,0 +1,17 @@
+.input {
+  background-color: rgb(238, 238, 238);
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  width: 5rem;
+  font-size: 2rem;
+}
+.btn {
+  background-color: rgb(11, 247, 31);
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  font-size: 2rem;
+}
+.text {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
