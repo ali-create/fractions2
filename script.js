@@ -1,22 +1,40 @@
-let f1r, f2r, f1, f2, inputZero, inputOne, inputTwo, inputThree;
+let firstFraction,
+  secondFraction,
+  fractionOneVal,
+  fractionTwoVal,
+  inputLT,
+  inputRT,
+  inputLB,
+  inputRB;
+
+// declaring void variables
+
 let plainText = document.querySelector(".plainText");
+
+// compared fractions text
+
 document.querySelector(".btn").addEventListener("click", function () {
-  inputZero = document.querySelector(".input--0").value;
-  inputOne = document.querySelector(".input--1").value;
-  inputTwo = document.querySelector(".input--2").value;
-  inputThree = document.querySelector(".input--3").value;
+  // when `compare` clicked
+  inputLT = document.querySelector(".input--0").value;
+  inputRT = document.querySelector(".input--1").value;
+  inputLB = document.querySelector(".input--2").value;
+  inputRB = document.querySelector(".input--3").value;
 
-  f1r = `${inputZero}/${inputTwo}`;
-  f2r = `${inputOne}/${inputThree}`;
+  // input val to var
 
-  f1 = (100 / inputZero) * inputTwo;
+  firstFraction = `${inputLT}/${inputLB}`;
+  secondFraction = `${inputRT}/${inputRB}`;
 
-  f2 = (100 / inputOne) * inputThree;
-  if (f2 < f1) {
-    plainText.textContent = `${f2r} is larger than ${f1r}.`;
-  } else if (f1 < f2) {
-    plainText.textContent = `${f1r} is larger than ${f2r}.`;
-  } else if ((f2 = f1)) {
-    plainText.textContent = `${f2r} is equal to ${f1r}.`;
+  // making 2 fractions out of 4 values ^^
+
+  fractionOneVal = (100 / inputLT) * inputLB;
+
+  fractionTwoVal = (100 / inputRT) * inputRB;
+  if (fractionTwoVal < fractionOneVal) {
+    plainText.textContent = `${secondFraction} is larger than ${firstFraction}.`;
+  } else if (fractionOneVal < fractionTwoVal) {
+    plainText.textContent = `${firstFraction} is larger than ${secondFraction}.`;
+  } else if ((fractionTwoVal = fractionOneVal)) {
+    plainText.textContent = `${secondFraction} is equal to ${firstFraction}.`;
   }
-});
+}); // comparison and display of fractions
