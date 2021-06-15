@@ -1,11 +1,4 @@
-let inputZero;
-let inputOne;
-let f1r;
-let f2r;
-let inputTwo;
-let inputThree;
-let f1;
-let f2;
+let f1r, f2r, f1, f2, inputZero, inputOne, inputTwo, inputThree;
 let plainText = document.querySelector(".plainText");
 document.querySelector(".btn").addEventListener("click", function () {
   inputZero = document.querySelector(".input--0").value;
