@@ -5,7 +5,8 @@ let firstFraction,
   inputLT,
   inputRT,
   inputLB,
-  inputRB;
+  inputRB,
+  u = "\u2800";
 
 // declaring void variables
 
@@ -37,4 +38,7 @@ document.querySelector(".btn").addEventListener("click", function () {
   } else if ((fractionTwoVal = fractionOneVal)) {
     plainText.textContent = `${secondFraction} is equal to ${firstFraction}.`;
   }
+  document.querySelector(
+    ".variText--0"
+  ).textContent = `${inputLT}/${inputLB}${u}${u}${u}${u}${u}${u}${u}${inputRT}/${inputRB} `;
 }); // comparison and display of fractions
