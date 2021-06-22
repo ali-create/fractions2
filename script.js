@@ -7,6 +7,7 @@ let firstFraction,
   inputLB,
   inputRB,
   u = "\u2800";
+alert("amogus")
 
 // declaring void variables
 
